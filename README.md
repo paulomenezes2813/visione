@@ -2,6 +2,8 @@
 
 Ecossistema integrado de gestão empresarial.
 
+🌐 **No ar:** https://paulomenezes2813.github.io/visione/ · Repositório: https://github.com/paulomenezes2813/visione · Deploy via GitHub Pages (branch `main`, raiz).
+
 O Visione não é apenas um software nem apenas uma consultoria. É um **ecossistema de gestão** onde quatro pilares — Modelo de Gestão, Consultoria, Auditoria e Plataforma — atuam de forma complementar para gerar melhoria contínua nas organizações.
 
 Este repositório (`empresadegestao`) contém o **site institucional do Visione** (HTML + CSS puro) e a documentação estratégica do negócio.
