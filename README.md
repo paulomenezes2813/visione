@@ -22,14 +22,13 @@ Site institucional em HTML + CSS puro (sem build), hospedável em qualquer lugar
 | [`site.js`](site.js) | Animações de scroll-reveal (progressive enhancement) |
 | [`favicon.svg`](favicon.svg) | Ícone (metáfora de lente/olhar) |
 
-### Configurar o formulário de contato
+### Formulário de contato
 
-O formulário em `contato.html` está pronto, mas precisa de um destino para os envios (site estático não envia e-mail sozinho). Opções sem backend:
+O formulário em `contato.html` está ligado ao **FormSubmit.co** (sem backend), enviando para `paulomenezes2813@gmail.com`. Após o envio, o visitante é redirecionado para `obrigado.html`.
 
-- **Formspree** (funciona em qualquer host): crie um formulário grátis em formspree.io e troque `SEU_FORM_ID` no atributo `action` do `<form>` pelo ID gerado.
-- **Netlify Forms** (se hospedar na Netlify): adicione `data-netlify="true"` ao `<form>` e remova o `action` do Formspree.
+**Ativação (uma vez só):** o FormSubmit exige uma primeira confirmação. Faça **um envio de teste** pelo formulário no site publicado; o serviço manda um e-mail "Activate Form" para o Gmail — clique no link e o formulário passa a entregar todas as mensagens.
 
-Enquanto não configurado, o e-mail `contato@visione.com.br` (também placeholder) fica disponível na lateral da página.
+Para trocar o e-mail de destino, edite o `action` do `<form>` em `contato.html`. (O e-mail fica visível no código-fonte; se quiser ocultá-lo, o FormSubmit oferece um endereço-alias após a ativação.)
 
 ## Documentação
 
