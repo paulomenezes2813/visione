@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visione — Pauta de Decisões</title>
+<style>
+  :root{
+    --ink:#1b2330; --muted:#5b6676; --line:#e3e7ee;
+    --teal:#0f6e56; --purple:#534ab7; --purple-bg:#eeedfe;
+    --card:#ffffff; --page:#f6f7f9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:13px;line-height:1.5}
+  .page{max-width:920px;margin:0 auto;padding:28px}
+  .kick{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);font-weight:600}
+  h1{font-size:26px;margin:4px 0 10px;font-weight:700}
+  .flag{background:var(--purple-bg);color:var(--purple);border-radius:10px;padding:10px 14px;font-weight:600;margin-bottom:18px}
+  .sec{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:20px 0 8px}
+  .key{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--purple);border-radius:0 12px 12px 0;padding:12px 14px;margin-bottom:8px}
+  .kid{font-weight:700;color:var(--purple);font-size:12px}
+  .q{font-weight:600;margin:2px 0 4px}
+  .rec{color:var(--muted);font-size:12.5px}
+  .rec b{color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin-top:4px}
+  th{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+  td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+  td .id{font-weight:700;color:var(--ink)}
+  td .rc{color:var(--muted);font-size:12px}
+  .own{font-size:10.5px;color:var(--teal);background:#e1f5ee;border-radius:999px;padding:2px 8px;white-space:nowrap}
+  .chk{width:14px;height:14px;border:1.5px solid #9aa3b2;border-radius:3px;display:inline-block}
+  .dec{border:1px dashed #c3cad6;border-radius:4px;min-height:18px}
+  col.cchk{width:30px} col.cown{width:96px} col.cdec{width:150px}
+  footer{margin-top:24px;color:var(--muted);font-size:11px;border-top:1px solid var(--line);padding-top:10px}
+  @media print{
+    body{background:#fff}
+    .page{max-width:none;padding:0}
+    .key,tr{break-inside:avoid}
+    @page{margin:12mm}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="kick">Reunião de sócios</div>
+  <h1>Visione — Pauta de Decisões</h1>
+  <div class="flag">▶ Decidir primeiro D1, D2 e D3 — elas destravam todas as outras decisões.</div>
+
+  <div class="sec">Decisões fundamentais</div>
+  <div class="key">
+    <div class="kid">D1 · Identidade da marca</div>
+    <div class="q">"Visione" é a empresa, o produto ou ambos?</div>
+    <div class="rec"><b>Recomendação:</b> marca-mãe do ecossistema, com "Plataforma Visione" dentro. &nbsp;·&nbsp; Resp.: Sócios / Erick</div>
+  </div>
+  <div class="key">
+    <div class="kid">D2 · Rede de entrega</div>
+    <div class="q">Consultores internos ou credenciados?</div>
+    <div class="rec"><b>Recomendação:</b> 100% interno nos pilotos; credenciamento como fase 2, após método e certificação prontos. &nbsp;·&nbsp; Resp.: Fábio / Sócios</div>
+  </div>
+  <div class="key">
+    <div class="kid">D3 · Dados e propriedade intelectual</div>
+    <div class="q">Como proteger o modelo e usar os dados dos clientes?</div>
+    <div class="rec"><b>Recomendação:</b> marca registrada + licença de uso; dados anonimizados/agregados previstos em contrato; LGPD desde o MVP. &nbsp;·&nbsp; Resp.: Sócios + jurídico</div>
+  </div>
+
+  <div class="sec">Modelo de negócio e receita</div>
+  <table><colgroup><col class="cchk"><col><col class="cown"><col class="cdec"></colgroup>
+    <tr><th></th><th>Questão e recomendação</th><th>Resp.</th><th>Decisão</th></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">B1</span> · Auditoria é função ou produto? <div class="rc">Rec.: ambos — função no modelo + oferta avulsa</div></td><td><span class="own">Fábio</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">B5</span> · Como cobrar a consultoria? <div class="rc">Rec.: projeto por fases + retainer de acompanhamento</div></td><td><span class="own">Cyro/Fábio</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">B3</span> · Educação paga ou grátis? <div class="rc">Rec.: freemium; certificações pagas; foco B2B</div></td><td><span class="own">Fábio/Erick</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">B2</span> · Frameworks vendidos à parte? <div class="rc">Rec.: embutidos na implantação no início</div></td><td><span class="own">Sócios</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">B6</span> · Monetizar plataforma por módulo? <div class="rc">Rec.: sim, via CompanyModule</div></td><td><span class="own">Paulo</span></td><td><div class="dec"></div></td></tr>
+  </table>
+
+  <div class="sec">Go-to-market</div>
+  <table><colgroup><col class="cchk"><col><col class="cown"><col class="cdec"></colgroup>
+    <tr><th></th><th>Questão e recomendação</th><th>Resp.</th><th>Decisão</th></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">C1</span> · Quais 2–3 segmentos primeiro? <div class="rc">Rec.: onde há rede/casos; Agro já tem o jogo</div></td><td><span class="own">Cyro</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">C3</span> · Sequência de lançamento <div class="rc">Rec.: governança → societário → conteúdo → consultoria → MVP</div></td><td><span class="own">Sócios</span></td><td><div class="dec"></div></td></tr>
+  </table>
+
+  <div class="sec">Metodologia e governança</div>
+  <table><colgroup><col class="cchk"><col><col class="cown"><col class="cdec"></colgroup>
+    <tr><th></th><th>Questão e recomendação</th><th>Resp.</th><th>Decisão</th></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">M1</span> · Modelo de Consciência é a espinha dorsal? <div class="rc">Rec.: sim, estrutura canônica do modelo</div></td><td><span class="own">Fábio</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">M2</span> · Quem governa o modelo? <div class="rc">Rec.: dono nomeado + revisão trimestral</div></td><td><span class="own">Fábio</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">M5</span> · Certificação de consultores <div class="rc">Rec.: trilha + exame + recertificação (pré-D2)</div></td><td><span class="own">Fábio</span></td><td><div class="dec"></div></td></tr>
+  </table>
+
+  <div class="sec">Plataforma (técnicas)</div>
+  <table><colgroup><col class="cchk"><col><col class="cown"><col class="cdec"></colgroup>
+    <tr><th></th><th>Questão e recomendação</th><th>Resp.</th><th>Decisão</th></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">E1</span> · Multi-tenant <div class="rc">Rec.: schema único com companyId</div></td><td><span class="own">Paulo</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">E3</span> · Escopo do MVP <div class="rc">Rec.: UGBs + indicadores + processos + planos + dashboards</div></td><td><span class="own">Paulo</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">E5</span> · Jogos na plataforma? <div class="rc">Rec.: app separado com SSO</div></td><td><span class="own">Paulo</span></td><td><div class="dec"></div></td></tr>
+    <tr><td><span class="chk"></span></td><td><span class="id">E6</span> · LMS próprio ou de mercado? <div class="rc">Rec.: ferramenta de mercado integrada no início</div></td><td><span class="own">Paulo/Fábio</span></td><td><div class="dec"></div></td></tr>
+  </table>
+
+  <footer>Visione · pauta de decisões — versão 0.1. Conteúdo completo: docs/decisoes-em-aberto.md · Data da reunião: __ / __ / ____</footer>
+</div>
+</body>
+</html>
